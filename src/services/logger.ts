@@ -94,7 +94,7 @@ export class Logger {
     public static setShardId(shardId: number): void {
         if (this.shardId !== shardId) {
             this.shardId = shardId;
-            logger = logger.child({ shardId });
+            // logger = logger.child({ shardId });
         }
     }
 }
