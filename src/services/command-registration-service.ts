@@ -8,7 +8,7 @@ import {
 } from 'discord.js';
 import { createRequire } from 'node:module';
 
-import { Logger } from './logger.js';
+import { Logger } from './logger';
 
 const require = createRequire(import.meta.url);
 let Config = require('../../config/config.json');

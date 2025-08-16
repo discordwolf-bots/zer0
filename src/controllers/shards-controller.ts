@@ -2,16 +2,16 @@ import { ActivityType, ShardingManager } from 'discord.js';
 import { Request, Response, Router } from 'express';
 import { createRequire } from 'node:module';
 
-import { Controller } from './index.js';
-import { CustomClient } from '../extensions/index.js';
-import { mapClass } from '../middleware/index.js';
+import { Controller } from './index';
+import { CustomClient } from '../extensions/index';
+import { mapClass } from '../middleware/index';
 import {
     GetShardsResponse,
     SetShardPresencesRequest,
     ShardInfo,
     ShardStats,
-} from '../models/cluster-api/index.js';
-import { Logger } from '../services/index.js';
+} from '../models/cluster-api/index';
+import { Logger } from '../services/index';
 
 const require = createRequire(import.meta.url);
 let Config = require('../../config/config.json');

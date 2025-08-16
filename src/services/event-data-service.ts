@@ -6,8 +6,8 @@ import {
     User,
 } from 'discord.js';
 
-import { Language } from '../models/enum-helpers/language.js';
-import { EventData } from '../models/internal-models.js';
+import { Language } from '../models/enum-helpers/language';
+import { EventData } from '../models/internal-models';
 
 export class EventDataService {
     public async create(

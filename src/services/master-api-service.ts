@@ -1,12 +1,12 @@
 import { createRequire } from 'node:module';
 import { URL } from 'node:url';
 
-import { HttpService } from './index.js';
+import { HttpService } from './index';
 import {
     LoginClusterResponse,
     RegisterClusterRequest,
     RegisterClusterResponse,
-} from '../models/master-api/index.js';
+} from '../models/master-api/index';
 
 const require = createRequire(import.meta.url);
 let Config = require('../../config/config.json');

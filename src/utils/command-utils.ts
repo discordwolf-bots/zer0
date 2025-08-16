@@ -6,11 +6,11 @@ import {
     ThreadChannel,
 } from 'discord.js';
 
-import { FormatUtils, InteractionUtils } from './index.js';
-import { Command } from '../commands/index.js';
-import { Permission } from '../models/enum-helpers/index.js';
-import { EventData } from '../models/internal-models.js';
-import { Lang } from '../services/index.js';
+import { FormatUtils, InteractionUtils } from './index';
+import { Command } from '../commands/index';
+import { Permission } from '../models/enum-helpers/index';
+import { EventData } from '../models/internal-models';
+import { Lang } from '../services/index';
 
 export class CommandUtils {
     public static findCommand(commands: Command[], commandParts: string[]): Command {

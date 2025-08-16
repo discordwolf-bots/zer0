@@ -1,6 +1,6 @@
 import { Message } from 'discord.js';
 
-import { EventHandler, TriggerHandler } from './index.js';
+import { EventHandler, TriggerHandler } from './index';
 
 export class MessageHandler implements EventHandler {
     constructor(private triggerHandler: TriggerHandler) {}

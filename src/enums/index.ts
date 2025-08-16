@@ -1,3 +1,3 @@
-export { DevCommandName } from './dev-command-name.js';
-export { HelpOption } from './help-option.js';
-export { InfoOption } from './info-option.js';
+export { DevCommandName } from './dev-command-name';
+export { HelpOption } from './help-option';
+export { InfoOption } from './info-option';

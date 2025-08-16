@@ -1,7 +1,7 @@
 import { fetchRecommendedShardCount, ShardClientUtil, ShardingManager } from 'discord.js';
 
-import { MathUtils } from './index.js';
-import { DiscordLimits } from '../constants/index.js';
+import { MathUtils } from './index';
+import { DiscordLimits } from '../constants/index';
 
 export class ShardUtils {
     public static async requiredShardCount(token: string): Promise<number> {

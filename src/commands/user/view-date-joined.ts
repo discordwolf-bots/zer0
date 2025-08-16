@@ -2,11 +2,11 @@ import { DMChannel, PermissionsString, UserContextMenuCommandInteraction } from 
 import { RateLimiter } from 'discord.js-rate-limiter';
 import { DateTime } from 'luxon';
 
-import { Language } from '../../models/enum-helpers/index.js';
-import { EventData } from '../../models/internal-models.js';
-import { Lang } from '../../services/index.js';
-import { InteractionUtils } from '../../utils/index.js';
-import { Command, CommandDeferType } from '../index.js';
+import { Language } from '../../models/enum-helpers/index';
+import { EventData } from '../../models/internal-models';
+import { Lang } from '../../services/index';
+import { InteractionUtils } from '../../utils/index';
+import { Command, CommandDeferType } from '../index';
 
 export class ViewDateJoined implements Command {
     public names = [Lang.getRef('userCommands.viewDateJoined', Language.Default)];
