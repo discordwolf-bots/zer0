@@ -3,12 +3,12 @@ import { createRequire } from 'node:module';
 import os from 'node:os';
 import typescript from 'typescript';
 
-import { DevCommandName } from '../../enums/index.js';
-import { Language } from '../../models/enum-helpers/index.js';
-import { EventData } from '../../models/internal-models.js';
-import { Lang } from '../../services/index.js';
-import { FormatUtils, InteractionUtils, ShardUtils } from '../../utils/index.js';
-import { Command, CommandDeferType } from '../index.js';
+import { DevCommandName } from '../../enums/index';
+import { Language } from '../../models/enum-helpers/index';
+import { EventData } from '../../models/internal-models';
+import { Lang } from '../../services/index';
+import { FormatUtils, InteractionUtils, ShardUtils } from '../../utils/index';
+import { Command, CommandDeferType } from '../index';
 
 const require = createRequire(import.meta.url);
 let Config = require('../../../config/config.json');

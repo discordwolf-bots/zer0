@@ -1,6 +1,6 @@
 import { ButtonInteraction } from 'discord.js';
 
-import { EventData } from '../models/internal-models.js';
+import { EventData } from '../models/internal-models';
 
 export interface Button {
     ids: string[];

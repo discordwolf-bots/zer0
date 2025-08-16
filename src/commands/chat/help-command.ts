@@ -1,11 +1,11 @@
 import { ChatInputCommandInteraction, EmbedBuilder, PermissionsString } from 'discord.js';
 
-import { HelpOption } from '../../enums/index.js';
-import { Language } from '../../models/enum-helpers/index.js';
-import { EventData } from '../../models/internal-models.js';
-import { Lang } from '../../services/index.js';
-import { ClientUtils, FormatUtils, InteractionUtils } from '../../utils/index.js';
-import { Command, CommandDeferType } from '../index.js';
+import { HelpOption } from '../../enums/index';
+import { Language } from '../../models/enum-helpers/index';
+import { EventData } from '../../models/internal-models';
+import { Lang } from '../../services/index';
+import { ClientUtils, FormatUtils, InteractionUtils } from '../../utils/index';
+import { Command, CommandDeferType } from '../index';
 
 export class HelpCommand implements Command {
     public names = [Lang.getRef('chatCommands.help', Language.Default)];

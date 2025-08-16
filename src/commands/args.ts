@@ -1,8 +1,8 @@
 import { APIApplicationCommandBasicOption, ApplicationCommandOptionType } from 'discord.js';
 
-import { DevCommandName, HelpOption, InfoOption } from '../enums/index.js';
-import { Language } from '../models/enum-helpers/index.js';
-import { Lang } from '../services/index.js';
+import { DevCommandName, HelpOption, InfoOption } from '../enums/index';
+import { Language } from '../models/enum-helpers/index';
+import { Lang } from '../services/index';
 
 export class Args {
     public static readonly DEV_COMMAND: APIApplicationCommandBasicOption = {

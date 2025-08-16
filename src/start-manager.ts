@@ -2,12 +2,12 @@ import { ShardingManager } from 'discord.js';
 import { createRequire } from 'node:module';
 import 'reflect-metadata';
 
-import { GuildsController, RootController, ShardsController } from './controllers/index.js';
-import { Job, UpdateServerCountJob } from './jobs/index.js';
-import { Api } from './models/api.js';
-import { Manager } from './models/manager.js';
-import { HttpService, JobService, Logger, MasterApiService } from './services/index.js';
-import { MathUtils, ShardUtils } from './utils/index.js';
+import { GuildsController, RootController, ShardsController } from './controllers/index';
+import { Job, UpdateServerCountJob } from './jobs/index';
+import { Api } from './models/api';
+import { Manager } from './models/manager';
+import { HttpService, JobService, Logger, MasterApiService } from './services/index';
+import { MathUtils, ShardUtils } from './utils/index';
 
 const require = createRequire(import.meta.url);
 let Config = require('../config/config.json');
@@ -51,7 +51,7 @@ async function start(): Promise<void> {
         return;
     }
 
-    let shardManager = new ShardingManager('dist/start-bot.js', {
+    let shardManager = new ShardingManager('dist/start-bot', {
         token: Config.client.token,
         mode: Debug.override.shardMode.enabled ? Debug.override.shardMode.value : 'process',
         respawn: true,

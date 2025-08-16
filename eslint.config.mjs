@@ -63,7 +63,7 @@ var customConfig = defineConfig([
                 },
             ],
             '@typescript-eslint/unbound-method': 'off',
-            'import/extensions': ['error', 'ignorePackages'],
+            'import/extensions': ['error', 'ignorePackages',{"ts":never}],
             'import/no-extraneous-dependencies': 'error',
             'import/no-unresolved': 'off',
             'import/no-useless-path-segments': 'error',
