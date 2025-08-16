@@ -34,8 +34,8 @@ import {
 import { Trigger } from './triggers/index';
 
 const require = createRequire(import.meta.url);
-let Config = require('../config/configon');
-let Logs = require('../lang/logson');
+let Config = require('../config/config.json');
+let Logs = require('../lang/logs.json');
 
 async function start(): Promise<void> {
     // Services
